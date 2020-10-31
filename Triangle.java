@@ -54,8 +54,14 @@ public class Triangle {
         return A+B+C;
     }
 
-    // public void setVertex(int index, Point newP) {
-
-    // }
+    public void setVertex(int index, Point newP) {
+        if (index == 0) {
+            v1 = newP;
+        } else if (index == 1) {
+            v2 = newP;
+        } else {
+            v3 = newP;
+        }
+    }
     
 }
