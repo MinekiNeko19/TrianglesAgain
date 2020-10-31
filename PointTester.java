@@ -18,10 +18,22 @@ public class PointTester {
         // System.out.println(a.equals(b));
         // System.out.println(a.equals(c));
 
-        System.out.println(scalene.getPerimeter());
-        System.out.println(isosceles.getPerimeter());
+        // System.out.println(scalene.getPerimeter());
+        // System.out.println(isosceles.getPerimeter());
 
-        System.out.println(scalene.getArea());
-        System.out.println(isosceles.getArea());
-    }
+        // System.out.println(scalene.getArea());
+        // System.out.println(isosceles.getArea());
+
+        ////Testing rounding fxn
+        //     System.out.println(roundTenThousandths(123.55555555555555));
+        // }
+        // public static double roundTenThousandths(double n) {
+        //         n = Math.round(n*10000);
+        //         n = n/10000;
+        //         return n;
+
+        System.out.println(scalene.classify());
+        System.out.println(isosceles.classify());
+        System.out.println(equilateral.classify());
+        }
 }
