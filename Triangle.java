@@ -47,9 +47,12 @@ public class Triangle {
         }
     }
 
-    // public String toString() {
-
-    // }
+    public String toString() {
+        String A = "v1(" + String.valueOf(v1.getX()) + ", " + String.valueOf(v1.getY()) + ") ";
+        String B = "v2(" + String.valueOf(v2.getX()) + ", " + String.valueOf(v2.getY()) + ") ";
+        String C = "v3(" + String.valueOf(v3.getX()) + ", " + String.valueOf(v3.getY()) + ")";
+        return A+B+C;
+    }
 
     // public void setVertex(int index, Point newP) {
 
