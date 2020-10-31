@@ -36,8 +36,11 @@ public class PointTester {
         // System.out.println(isosceles.classify());
         // System.out.println(equilateral.classify());
 
-        System.out.println(scalene.toString());
-        System.out.println(isosceles.toString());
-        System.out.println(equilateral.toString());
+        // System.out.println(scalene.toString());
+        // System.out.println(isosceles.toString());
+        // System.out.println(equilateral.toString());
+
+        // equilateral.setVertex(2, e);
+        // System.out.println(equilateral.toString());
         }
 }
