@@ -28,9 +28,24 @@ public class Triangle {
         return Math.sqrt((s)*(s-s1)*(s-s2)*(s-s3));
     }
 
-    // public String classify() {
+    private static double roundTenThousandths(double n) {
+        n = Math.round(n*10000);
+        n = n/10000;
+        return n;
+    }
 
-    // }
+    public String classify() {
+        double s1 = roundTenThousandths(v1.distanceTo(v2));
+        double s2 = roundTenThousandths(v2.distanceTo(v3));
+        double s3 = roundTenThousandths(v3.distanceTo(v1));
+        if (s1==s2 && s2==s3) {
+            return "equilateral";
+        } else if (s1==s2 || s2 == s3 || s1==s3) {
+            return "isosceles";
+        } else {
+            return "scalene";
+        }
+    }
 
     // public String toString() {
 
@@ -39,4 +54,5 @@ public class Triangle {
     // public void setVertex(int index, Point newP) {
 
     // }
+    
 }
