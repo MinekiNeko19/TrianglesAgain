@@ -25,12 +25,9 @@ public class Point {
         double xleg = this.getX()-other.getX();
         double yleg = this.getY()-other.getY();
         return Math.sqrt((xleg*xleg)+(yleg*yleg));
-        // double x = this.getX()-other.getX();
-        // double y = this.getY()-other.getY();
-        // return Math.sqrt((x*x)+(y*y));
     }
 
     public boolean equals(Point other) {
-        return (this.getX()==other.getX()) && (this.getY()==other.getY());
+        return other != null && this.getX()==other.getX() && this.getY()==other.getY();
     }
 }
