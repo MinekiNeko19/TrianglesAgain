@@ -22,10 +22,10 @@ public class Triangle {
     public double getArea() {
         double s1 = v1.distanceTo(v2);
         double s2 = v1.distanceTo(v3);
-        double s3 = v2.distanceTo(v1);
+        double s3 = v2.distanceTo(v3);
         double s = (s1+s2+s3)/2;
 
-        return Math.sqrt((s)*(s-s1)*(s-s2)*(s-s3));
+        return Math.sqrt(s*(s-s1)*(s-s2)*(s-s3)); // hmm
     }
 
     private static double roundTenThousandths(double n) {
